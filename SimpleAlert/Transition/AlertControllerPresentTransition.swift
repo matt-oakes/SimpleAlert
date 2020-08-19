@@ -13,7 +13,7 @@ class AlertControllerPresentTransition: ViewControllerAnimatedTransition {
         let backgroundView = UIView(frame: container.bounds)
         backgroundView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         backgroundView.alpha = 0
-        backgroundView.backgroundColor = backgroundColor.withAlphaComponent(0.4)
+        backgroundView.backgroundColor = backgroundColor
         container.addSubview(backgroundView)
 
         to.view.frame = container.bounds
